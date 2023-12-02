@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <section>
+      <div class="wrapper">
+        <h1>QR Code Generator</h1>
+        <div id="qrcode"></div>
+        <div id="qrcodeFirst"></div>
+        <div class="form">
+          <label class="form-label" for="url"
+            >Add URL Data :
+            <a href="" download="QRCode" id="download"
+              ><i class="bi bi-cloud-download"></i
+            ></a>
+          </label>
+          <div class="d-flex gap-3">
+            <div class="form-group">
+              <input
+                type="url"
+                class="form-control"
+                id="url"
+                placeholder="Your Link"
+              />
+            </div>
+            <input
+              type="submit"
+              id="submitBtn"
+              class="btn"
+              value="Generate Qr Code"
+            />
+            <span id="validation">Add Right Url Link</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
